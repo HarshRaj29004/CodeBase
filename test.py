@@ -1,11 +1,9 @@
-# import openai
 from pdfminer.high_level import extract_text
 from sentence_transformers import SentenceTransformer, CrossEncoder, util
 from text_generation import Client
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
-# openai.api_key = "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"
 
 PREPROMPT = "Below are a series of dialogues between various people and an AI assistant. The AI tries to be helpful, polite, honest, sophisticated, emotionally aware, and humble-but-knowledgeable. The assistant is happy to help with almost anything, and will do its best to understand exactly what is needed. It also tries to avoid giving false or misleading information, and it caveats when it isn't entirely sure about the right answer. That said, the assistant is practical and really does its best, and doesn't let caution get too much in the way of being useful.\n"
 PROMPT = """"Use the following pieces of context to answer the question at the end.
