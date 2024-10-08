@@ -1,37 +1,27 @@
-from pdfminer.high_level import extract_text
-from sentence_transformers import SentenceTransformer, CrossEncoder, util
-from text_generation import Client
+# import openai
+# from pdfminer.high_level import extract_text
 import torch
-from transformers import AutoTokenizer, AutoModelForCausalLM
+from sentence_transformers import SentenceTransformer, CrossEncoder, util
+from transformers import BertTokenizer, BertForQuestionAnswering, BertForSequenceClassification
 
-
-PREPROMPT = "Below are a series of dialogues between various people and an AI assistant. The AI tries to be helpful, polite, honest, sophisticated, emotionally aware, and humble-but-knowledgeable. The assistant is happy to help with almost anything, and will do its best to understand exactly what is needed. It also tries to avoid giving false or misleading information, and it caveats when it isn't entirely sure about the right answer. That said, the assistant is practical and really does its best, and doesn't let caution get too much in the way of being useful.\n"
-PROMPT = """"Use the following pieces of context to answer the question at the end.
-If you don't know the answer, just say that you don't know, don't try to
-make up an answer. Don't make up new terms which are not available in the context.
-
-{context}"""
-
-END_7B = "\n<|prompter|>{query}<|endoftext|><|assistant|>"
-END_40B = "\nUser: {query}\nFalcon:"
-
-PARAMETERS = {
-    "temperature": 0.7,
-    "top_p": 0.95,
-    "repetition_penalty": 1.2,
-    "top_k": 50,
-    "truncate": 1000,
-    "max_new_tokens": 1024,
-    "seed": 42,
-    "stop_sequences": ["<|endoftext|>", "</s>"],
-}
-CLIENT_7B = Client("http://127.0.0.1.3000")  # Fill this part
-# CLIENT_40B = Client("https://")  # Fill this part
 
 def extract_text_from_pdf(pdf_path):
-    raw_text = extract_text(pdf_path)
-    cleaned_text = " ".join(raw_text.split()) 
-    return cleaned_text
+    with open(pdf_path, 'r') as file:
+        data = file.read()
+    lines = data.splitlines()
+    qa_pairs = []
+    current_qa = {}
+
+    for line in lines:
+        if line.startswith('q:'):
+            if current_qa:
+                qa_pairs.append(current_qa) 
+            current_qa = {'q': line[2:].strip()} 
+        elif line.startswith('a:'):
+            current_qa['a'] = line[2:].strip()  
+    if current_qa:
+        qa_pairs.append(current_qa)
+    return qa_pairs
 
 def process_extracted_text_to_qa(extracted_text):
     qa_pairs = []
@@ -45,17 +35,6 @@ def process_extracted_text_to_qa(extracted_text):
         except ValueError:
             continue
     return qa_pairs
-
-def embed_qa_pairs(qa_pairs):
-    paragraphs = [f"Q: {qa['q']} A: {qa['a']}" for qa in qa_pairs]
-    model = SentenceTransformer("sentence-transformers/all-mpnet-base-v2")
-    cross_encoder = CrossEncoder("cross-encoder/ms-marco-MiniLM-L-6-v2")
-    embeddings = model.encode(
-        paragraphs,
-        show_progress_bar=True,
-        convert_to_tensor=True,
-    )
-    return model, embeddings, paragraphs, cross_encoder
 
 def search(query, model, cross_enc, embeddings, paragraphs, top_k=5):
     query_embedding = model.encode(query, convert_to_tensor=True)
@@ -72,45 +51,73 @@ def search(query, model, cross_enc, embeddings, paragraphs, top_k=5):
         results.append(paragraphs[hit["corpus_id"]].replace("\n", " "))
     return results
 
+# Load Pretrained BERT models (for Question Answering)
+def load_bert_qa_model():
+    tokenizer = BertTokenizer.from_pretrained('bert-large-uncased-whole-word-masking-finetuned-squad')
+    model = BertForQuestionAnswering.from_pretrained('bert-large-uncased-whole-word-masking-finetuned-squad')
+    return tokenizer, model
 
-def load_falcon_model():
-    tokenizer = AutoTokenizer.from_pretrained("tiiuae/falcon-7b-instruct")
-    model = AutoModelForCausalLM.from_pretrained("distilbert-base-uncased", torch_dtype=torch.bfloat16)
-    model.to("cuda" if torch.cuda.is_available() else "cpu")
-    return model, tokenizer
+# Load Pretrained BERT model for Intent Classification (optional)
+def load_bert_intent_model(num_intents=5):
+    tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
+    model = BertForSequenceClassification.from_pretrained('bert-base-uncased', num_labels=num_intents)
+    return tokenizer, model
 
+# Tokenize user input for question answering
+def tokenize_input_qa(tokenizer, question, context):
+    inputs = tokenizer.encode_plus(question, context, add_special_tokens=True, return_tensors="pt")
+    return inputs
 
-def generate_falcon_response(model, tokenizer, prompt, max_tokens=150):
-    inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
-    outputs = model.generate(
-        inputs.input_ids, 
-        max_new_tokens=max_tokens, 
-        temperature=0.7, 
-        top_p=0.95, 
-        top_k=50, 
-        no_repeat_ngram_size=2,
-        do_sample=True
-    )
+# Tokenize user input for intent classification (optional)
+def tokenize_input_intent(tokenizer, query):
+    inputs = tokenizer(query, return_tensors="pt")
+    return inputs
 
-    response = tokenizer.decode(outputs[0], skip_special_tokens=True)
+# Get answer from the BERT Question Answering model
+def get_bert_answer(tokenizer, model, question, context):
+    inputs = tokenize_input_qa(tokenizer, question, context)
+    input_ids = inputs["input_ids"].tolist()[0]
+
+    outputs = model(**inputs)
+    answer_start = torch.argmax(outputs.start_logits)
+    answer_end = torch.argmax(outputs.end_logits) + 1
+
+    answer = tokenizer.convert_tokens_to_string(tokenizer.convert_ids_to_tokens(input_ids[answer_start:answer_end]))
+    return answer.strip()
+
+# For intent recognition (optional), predict the intent
+def predict_intent(tokenizer, model, query):
+    inputs = tokenize_input_intent(tokenizer, query)
+    outputs = model(**inputs)
+    intent_id = torch.argmax(outputs.logits).item()
+    return intent_id
+
+# Example to integrate into your chatbot system
+def chatbot_respond(bert_qa_tokenizer, bert_qa_model, query, context):
+    response = get_bert_answer(bert_qa_tokenizer, bert_qa_model, query, context)
     return response
 
 if __name__ == "__main__":
-    path = 'Dataset.pdf'
-    text = extract_text_from_pdf(path)
-    qa_pair = process_extracted_text_to_qa(text)
-    model1, embedding, para, cross_enc = embed_qa_pairs(qa_pair)
-    model, tokenizer = load_falcon_model()
+    path = 'Dataset.txt'
+    qa_pair = extract_text_from_pdf(path)
+    model1 = SentenceTransformer("sentence-transformers/all-mpnet-base-v2")
+    cross_encoder = CrossEncoder("cross-encoder/ms-marco-MiniLM-L-6-v2")
+    paragraphs = [f"Q: {qa['q']} A: {qa['a']}" for qa in qa_pair]
+    embeddings = model1.encode(
+        paragraphs,
+        show_progress_bar=True,
+        convert_to_tensor=True,
+    )
+    bert_qa_tokenizer, bert_qa_model = load_bert_qa_model()
     while True:
         query = input("Enter query: ")
-        results = search(query, model1, cross_enc, embedding, para, top_k=5)
-
-        query_7b = PREPROMPT + PROMPT.format(context="\n".join(results))
-        query_7b += END_7B.format(query=query)
-
     
-        falcon_response = generate_falcon_response(model, tokenizer, query_7b)
+        results = search(query, model1, cross_encoder, embeddings, paragraphs, top_k=5)
 
- 
-        print("\n***Falcon Response***")
-        print(falcon_response)
+        context = "\n".join(results)  
+    
+        # Get the answer using BERT QA model
+        response = get_bert_answer(bert_qa_tokenizer, bert_qa_model, query, context)
+
+        print("\n***BERT Response***")
+        print(response)
