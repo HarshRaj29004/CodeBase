@@ -23,19 +23,6 @@ def extract_text_from_pdf(pdf_path):
         qa_pairs.append(current_qa)
     return qa_pairs
 
-def process_extracted_text_to_qa(extracted_text):
-    qa_pairs = []
-    blocks = extracted_text.split("q:")[1:] 
-    for block in blocks:
-        try:
-            question, answer = block.split("a:", 1)
-            question = question.strip()
-            answer = answer.strip()
-            qa_pairs.append({"q": question, "a": answer})
-        except ValueError:
-            continue
-    return qa_pairs
-
 def search(query, model, cross_enc, embeddings, paragraphs, top_k=5):
     query_embedding = model.encode(query, convert_to_tensor=True)
     hits = util.semantic_search(query_embedding, embeddings, top_k=top_k)[0]
@@ -51,31 +38,9 @@ def search(query, model, cross_enc, embeddings, paragraphs, top_k=5):
         results.append(paragraphs[hit["corpus_id"]].replace("\n", " "))
     return results
 
-# Load Pretrained BERT models (for Question Answering)
-def load_bert_qa_model():
-    tokenizer = BertTokenizer.from_pretrained('bert-large-uncased-whole-word-masking-finetuned-squad')
-    model = BertForQuestionAnswering.from_pretrained('bert-large-uncased-whole-word-masking-finetuned-squad')
-    return tokenizer, model
 
-# Load Pretrained BERT model for Intent Classification (optional)
-def load_bert_intent_model(num_intents=5):
-    tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
-    model = BertForSequenceClassification.from_pretrained('bert-base-uncased', num_labels=num_intents)
-    return tokenizer, model
-
-# Tokenize user input for question answering
-def tokenize_input_qa(tokenizer, question, context):
-    inputs = tokenizer.encode_plus(question, context, add_special_tokens=True, return_tensors="pt")
-    return inputs
-
-# Tokenize user input for intent classification (optional)
-def tokenize_input_intent(tokenizer, query):
-    inputs = tokenizer(query, return_tensors="pt")
-    return inputs
-
-# Get answer from the BERT Question Answering model
 def get_bert_answer(tokenizer, model, question, context):
-    inputs = tokenize_input_qa(tokenizer, question, context)
+    inputs = tokenizer.encode_plus(question, context, add_special_tokens=True, return_tensors="pt")
     input_ids = inputs["input_ids"].tolist()[0]
 
     outputs = model(**inputs)
@@ -85,17 +50,6 @@ def get_bert_answer(tokenizer, model, question, context):
     answer = tokenizer.convert_tokens_to_string(tokenizer.convert_ids_to_tokens(input_ids[answer_start:answer_end]))
     return answer.strip()
 
-# For intent recognition (optional), predict the intent
-def predict_intent(tokenizer, model, query):
-    inputs = tokenize_input_intent(tokenizer, query)
-    outputs = model(**inputs)
-    intent_id = torch.argmax(outputs.logits).item()
-    return intent_id
-
-# Example to integrate into your chatbot system
-def chatbot_respond(bert_qa_tokenizer, bert_qa_model, query, context):
-    response = get_bert_answer(bert_qa_tokenizer, bert_qa_model, query, context)
-    return response
 
 if __name__ == "__main__":
     path = 'Dataset.txt'
@@ -108,7 +62,10 @@ if __name__ == "__main__":
         show_progress_bar=True,
         convert_to_tensor=True,
     )
-    bert_qa_tokenizer, bert_qa_model = load_bert_qa_model()
+    bert_qa_model = BertForQuestionAnswering.from_pretrained('bert-large-uncased-whole-word-masking-finetuned-squad',torch_dtype = torch.float16,low_cpu_mem_usage = True)
+    bert_qa_tokenizer = BertTokenizer.from_pretrained('bert-large-uncased-whole-word-masking-finetuned-squad')
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    bert_qa_model = bert_qa_model.to(device)
     while True:
         query = input("Enter query: ")
     
@@ -116,7 +73,6 @@ if __name__ == "__main__":
 
         context = "\n".join(results)  
     
-        # Get the answer using BERT QA model
         response = get_bert_answer(bert_qa_tokenizer, bert_qa_model, query, context)
 
         print("\n***BERT Response***")
