@@ -1,0 +1,155 @@
+Enter query: how to register to this hackathon?
+
+***BERT Response***
+online
+Enter query: any website?
+
+***BERT Response***
+our official website
+Enter query: link of this website?
+
+***BERT Response***
+the registration link can be found on our official website
+Enter query: i want to know are there mentors available for the hackathon?
+
+***BERT Response***
+q : will there be mentors available to guide participants
+Enter query: what is the duration of this event?
+
+***BERT Response***
+***BERT Response***
+q : will there be mentors available to guide participants
+Enter query: what is the duration of this event?
+
+***BERT Response***
+3 days
+Enter query: Do i have to attend this hackathon offline or can be done online?
+
+***BERT Response***
+online
+Enter query: i am below 18, can i participate in this hackathon?
+
+***BERT Response***
+can i register if i ' m a student
+Enter query: can a student participate in this hackathon?
+***BERT Response***
+q : will there be mentors available to guide participants
+Enter query: what is the duration of this event?
+
+***BERT Response***
+***BERT Response***
+3 days
+Enter query: Do i have to attend this hackathon offline or can be done online?
+
+***BERT Response***
+online
+Enter query: i am below 18, can i participate in this hackathon?
+
+***BERT Response***
+can i register if i ' m a student
+Enter query: can a student participate in this hackathon?
+
+***BERT Response***
+can i register if i ' m a student
+Enter query: how can i check status of my team?
+
+***BERT Response***
+by logging into your account on our website
+Enter query: what is registration fee for this hackathon?
+
+***BERT Response***
+there no registration fee
+Enter query: what is the last date to register to this hackathon?
+
+***BERT Response***
+14 nov
+Enter query: will date extend?
+
+***BERT Response***
+Enter query: will date extend?
+
+***BERT Response***
+there is no extension for the registration deadline
+Enter query: can a working profesional register?
+
+***BERT Response***
+can i register if i ' m a professional
+Enter query: how many persons should be in a team?
+
+***BERT Response***
+4
+Enter query:
+
+
+
+
+
+
+Enter query: will date extend?
+
+***BERT Response***
+there is no extension for the registration deadline
+Enter query: can a working profesional register?
+
+***BERT Response***
+can i register if i ' m a professional
+Enter query: will date extend?
+
+***BERT Response***
+
+***BERT Response***
+***BERT Response***
+there is no extension for the registration deadline
+Enter query: can a working profesional register?
+
+***BERT Response***
+can i register if i ' m a professional
+Enter query: how many persons should be in a team?
+
+***BERT Response***
+4
+Enter query: how to form a team?
+
+***BERT Response***
+gather your teammates and have one member register the team through the registration link
+Enter query: Venue of the hackathon?
+
+***BERT Response***
+iiit kota campus
+Enter query:
+Enter query: how to form a team?
+
+***BERT Response***
+gather your teammates and have one member register the team through the registration link
+Enter query: Venue of the hackathon?
+
+***BERT Response***
+Enter query: how to form a team?
+
+***BERT Response***
+gather your teammates and have one member register the team through the registration link
+Enter query: Venue of the hackathon?
+Enter query: how to form a team?
+
+***BERT Response***
+gather your teammates and have one member register the team through the registration link
+Enter query: how to form a team?
+
+***BERT Response***
+Enter query: how to form a team?
+
+Enter query: how to form a team?
+Enter query: how to form a team?
+
+Enter query: how to form a team?
+
+***BERT Response***
+gather your teammates and have one member register the team through the registration link
+Enter query: Venue of the hackathon?
+
+***BERT Response***
+iiit kota campus
+Enter query: can i get the schedule?
+
+***BERT Response***
+it will be announced on website
