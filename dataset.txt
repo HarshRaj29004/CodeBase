@@ -1,0 +1,86 @@
+q:How can I register for the hackathon online?
+a:You can visit our website "https://www.hackthechain.in"
+q:Is there an offline registration option?
+a:No,there is no offline options.
+q:What is the registration link?
+a:The registration link can be found on our official website [insert link here]. Please click on the link to proceed with the registration process.
+q:Is there a registration form I need to fill out?
+a:Yes, there is a registration form that needs to be filled out to complete your registration. You can find it at the registration link provided above.
+q:Do I need to create an account to register?
+a:Yes, you will need to create an account to register. This helps us manage your registration and keep you updated with important information.
+q:Can I register using my social media account?
+a:Yes, you can register using your social media account. We offer registration options through [specify social media platforms, e.g., Facebook, Google].
+q:Is there a minimum age requirement for registration?
+a:No, There is no minimum age criteria.
+q:Can I register if I'm a student?
+a:Absolutely! We welcome students to register for the event. You may also be eligible for student discounts.
+q:Can I register if I'm a professional?
+a:Yes, professionals are encouraged to register for the event. We believe that diverse participation enhances the experience for everyone.
+q:Can I register if I'm from outside the city/state/country?
+a:Yes, individuals from outside the city, state, or country can register for the event. We welcome participants from all locations.
+q:Is there a registration fee?
+a:There no registration fee.
+q:What is the registration fee amount?
+a:There no registration fee.
+Are there any discounts or promotions for early registration?
+a:There no registration fee.
+q:Is there a refund policy for the registration fee?
+a:There no registration fee.
+q:What is the last date for registration?
+a:The last date for registration is 14 Nov.
+q:Is there an extension for the registration deadline?
+a:Currently, there is no extension for the registration deadline. However, we will notify participants if any changes occur.
+q:How can I check my registration status?
+a:You can check your registration status by logging into your account on our website. There, you will find the details related to your registration.
+q:Can I modify my registration details after submitting?
+a:Yes, you can modify your registration details after submission. Please log in to your account to make any necessary changes.
+q:Can I register as a team?
+a:Yes, you can register as a team. Please ensure that all team members register under the same team name.
+q:What is the maximum team size?
+a:The maximum team size is 4.
+q:Are there any restrictions on team composition?
+a:No there is not any restrictions related to team composition.
+q:Can I register as an individual?
+a:Yes, you can register as an individual if you prefer not to join a team.
+q:Can I join an existing team?
+a:Yes, if you know a team that is looking for additional members, you can join an existing team. Please ensure you have their team code for registration.
+q:How do I form a team?
+a:To form a team, gather your teammates and have one member register the team through the registration link. They will need to provide the team name and details.
+q:Can I change my team after registration?
+a:Once registered, changes to team composition can be made by contacting our support team. Please provide the necessary details for any changes.
+q:When does the hackathon start?
+a:It will start on 14th Nov.
+q:What is the duration of the hackathon?
+a:It will 3 days event.
+q:Is there a specific theme for the hackathon?
+a:No, there is not any specific theme.
+q:What is the event format (in-person, online, hybrid)?
+a:Event format will be in-person, i.e. teams must be present at that location.
+q:Where will the hackathon be held?
+a:In IIIT Kota Campus.
+q:What are the event timings?
+a:It will be announced on the website.
+q:Is there a schedule for the event?
+a:It will be announced on website.
+q:Are there any workshops or talks planned?
+a:It will be announced on website.
+q:Is there a networking event?
+a:It will be announced on website.
+q:Is there a hackathon after-party?
+a:It will be announced on website.
+q:Is there a keynote speaker?
+a:It will be announced on website.
+q:Who are the keynote speakers?
+a:It will be announced on website.
+q:Are there any industry experts or celebrities attending?
+a:It will be announced on website.
+q:Will there be mentors available to guide participants?
+a:Yes, there will be mentors for guidance.
+Who are the mentors?
+a:It will be announced on website.
+What are the mentors' expertise?
+a:It will be announced on website.
+How can I request a mentor?
+a:It will be announced on website.
+Can I meet with a mentor one-on-one?
+a:It will be announced on website.
