@@ -32,11 +32,15 @@ def search(query, model, cross_enc, embeddings, paragraphs, top_k=5):
     for idx in range(len(cross_scores)):
         hits[idx]["cross_score"] = cross_scores[idx]
 
-    results = []
     hits = sorted(hits, key=lambda x: x["cross_score"], reverse=True)
+
+    results = []
     for hit in hits[:5]:
-        results.append(paragraphs[hit["corpus_id"]].replace("\n", " "))
+        paragraph = paragraphs[hit["corpus_id"]]
+        answer_part = paragraph.split("A:")[1].strip()
+        results.append(answer_part.replace("\n", " "))
     return results
+
 
 
 def get_bert_answer(tokenizer, model, question, context):
@@ -52,7 +56,7 @@ def get_bert_answer(tokenizer, model, question, context):
 
 
 if __name__ == "__main__":
-    path = 'Dataset.txt'
+    path = 'dataset.txt'
     qa_pair = extract_text_from_pdf(path)
     model1 = SentenceTransformer("sentence-transformers/all-mpnet-base-v2")
     cross_encoder = CrossEncoder("cross-encoder/ms-marco-MiniLM-L-6-v2")

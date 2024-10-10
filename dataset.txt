@@ -1,28 +1,28 @@
 q:How can I register for the hackathon online?
-a:You can visit our website "https://www.hackthechain.in"
+a:You can visit devfolio website
 q:Is there an offline registration option?
 a:No,there is no offline options.
 q:What is the registration link?
-a:The registration link can be found on our official website [insert link here]. Please click on the link to proceed with the registration process.
+a:The registration link can be found on our official website "https://devfolio.co/hackathons". Please click on the link to proceed with the registration process.
 q:Is there a registration form I need to fill out?
-a:Yes, there is a registration form that needs to be filled out to complete your registration. You can find it at the registration link provided above.
+a:Yes, there is a registration form that needs to be filled out to complete your registration.
 q:Do I need to create an account to register?
-a:Yes, you will need to create an account to register. This helps us manage your registration and keep you updated with important information.
+a:Yes, you will need to create an account at devfolio website.
 q:Can I register using my social media account?
-a:Yes, you can register using your social media account. We offer registration options through [specify social media platforms, e.g., Facebook, Google].
+a:Yes, you can register using your social media account.
 q:Is there a minimum age requirement for registration?
 a:No, There is no minimum age criteria.
 q:Can I register if I'm a student?
-a:Absolutely! We welcome students to register for the event. You may also be eligible for student discounts.
+a:Absolutely! We welcome students to register for the event.
 q:Can I register if I'm a professional?
 a:Yes, professionals are encouraged to register for the event. We believe that diverse participation enhances the experience for everyone.
 q:Can I register if I'm from outside the city/state/country?
-a:Yes, individuals from outside the city, state, or country can register for the event. We welcome participants from all locations.
+a:Yes, We welcome participants from all locations.
 q:Is there a registration fee?
 a:There no registration fee.
 q:What is the registration fee amount?
 a:There no registration fee.
-Are there any discounts or promotions for early registration?
+q:Are there any discounts or promotions for early registration?
 a:There no registration fee.
 q:Is there a refund policy for the registration fee?
 a:There no registration fee.
@@ -117,30 +117,30 @@ a:Yes, mentors have experience participating in and mentoring at hackathons, whi
 q:Can I participate if I am a minor?
 a:Yes you can participate.
 q:Is there a prize for the winning team?
-a:Will be announced soon.
+a:Absolutely!, winning team will get a prize of  $100 check.
 q:What is the prize?
-a:Will be announced soon.
+a:Winning team will get $100 cash.
 q:How will the winner be determined?
-a:Will be announced soon.
+a:Best submitted idea and reliable approach to implement it will be declared as winner.
 q:Is there a judging panel?
 a:Yes , there will be judging panel.
 q:What are the judging criteria?
 a:Will be announced soon.
 q:Is there a dress code for the event?
-a:Will be announced soon.
+a:Yes, dress should be formal.
 q:Is there a food and beverage area?
-a:Will be announced soon.
+a:Yes, there is canteen and food stalls at academic and entrance gate.
 q:Are there any accommodations available for participants?
-a:Will be announced soon.
+a:No, there will be no separate rooms for participants.
 q:Is there a transportation service provided?
-a:Will be announced soon.
+a:Unfortunately, there won't be any transportation services available.
 q:Can I bring my own laptop or equipment?
-a:Yes you can bring your own laptops.
+a:Yes, you can bring your own laptops.
 q:Is there a Wi-Fi connection available?
-a:Yes connectivity will be provided.
+a:Yes, connectivity will be provided.
 q:Can I use my phone during the event?
-a:Will be announced soon.
+a:Yes, you can use your phone during events.
 q:Are there any safety precautions in place?
-a:Will be announced soon.
+a:Safety precautions aren't required for this event.
 q:Is there insurance coverage for participants?
-a:Will be announced soon.
+a:Unfortunately, there won't be any insurance coverage provided for participants.
