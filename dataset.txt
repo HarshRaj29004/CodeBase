@@ -76,11 +76,71 @@ q:Are there any industry experts or celebrities attending?
 a:It will be announced on website.
 q:Will there be mentors available to guide participants?
 a:Yes, there will be mentors for guidance.
-Who are the mentors?
+q:Who are the mentors?
 a:It will be announced on website.
-What are the mentors' expertise?
+q:What are the mentors' expertise?
 a:It will be announced on website.
-How can I request a mentor?
+q:How can I request a mentor?
 a:It will be announced on website.
-Can I meet with a mentor one-on-one?
+q:Can I meet with a mentor one-on-one?
 a:It will be announced on website.
+q:Is plagiarism allowed?
+a:No, plagiarism is strictly prohibited. All work must be original and properly attributed.
+q:What are the consequences of plagiarism?
+a:If plagiarism is detected, the team or individual may face disqualification from the hackathon.
+q:What happens if I violate the rules of the hackathon?
+a:Violating hackathon rules can result in warnings, penalties, or immediate disqualification, depending on the severity of the infraction
+q:Can I appeal a decision if I am disqualified?
+a:Yes, participants may appeal a disqualification decision, but the final decision rests with the codebase members.
+q:Is mentor support available throughout the event?
+a:Yes, the Codebase team will be available to mentor participants throughout the event to provide support and guidance.
+q:How can I contact a mentor?
+a:You can reach out to a Codebase team mentor via the official communication channels such as  Discord, email or Instagram and LinkedIn handles.
+q:Can I request a mentor for specific help?
+a:Yes, you can request specific assistance from the Codebase team for any part of your project, whether technical or non-technical.
+q:Are there any limitations on the number of mentor requests?
+a:There are no strict limitations, but we encourage you to be considerate and respectful of other participants' need for mentorship from the Codebase team.
+q:Can I get help with my project idea or development?
+a:Absolutely! The Codebase team is here to assist with brainstorming, refining your project idea, and guiding you through development.
+q:Can I get feedback on my project from a mentor?
+a:Yes, the Codebase team will provide constructive feedback on your project to help you improve and optimize it.
+q:Can I get help with technical issues?
+a:Yes, the Codebase team is available to help troubleshoot and resolve any technical challenges you encounter during the hackathon.
+q:How do I know which mentor to approach?
+a:A mentor list with their areas of expertise will be provided. You can choose a mentor based on your project's requirements or the specific skills you need help with.
+q:Are there any mentors with specific expertise in my area of interest?
+a:Yes, mentors with a wide range of expertise, including technical and domain-specific areas, will be available.
+q:Can I request a mentor based on their experience or background?
+a:Absolutely! You are encouraged to request a mentor whose background and experience match the support you need for your project.
+q:Are there any mentors who have participated in previous hackathons?
+a:Yes, mentors have experience participating in and mentoring at hackathons, which makes them well-equipped to guide you through the challenges.
+q:Can I participate if I am a minor?
+a:Yes you can participate.
+q:Is there a prize for the winning team?
+a:Will be announced soon.
+q:What is the prize?
+a:Will be announced soon.
+q:How will the winner be determined?
+a:Will be announced soon.
+q:Is there a judging panel?
+a:Yes , there will be judging panel.
+q:What are the judging criteria?
+a:Will be announced soon.
+q:Is there a dress code for the event?
+a:Will be announced soon.
+q:Is there a food and beverage area?
+a:Will be announced soon.
+q:Are there any accommodations available for participants?
+a:Will be announced soon.
+q:Is there a transportation service provided?
+a:Will be announced soon.
+q:Can I bring my own laptop or equipment?
+a:Yes you can bring your own laptops.
+q:Is there a Wi-Fi connection available?
+a:Yes connectivity will be provided.
+q:Can I use my phone during the event?
+a:Will be announced soon.
+q:Are there any safety precautions in place?
+a:Will be announced soon.
+q:Is there insurance coverage for participants?
+a:Will be announced soon.
