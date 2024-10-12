@@ -1,146 +1,152 @@
 q:How can I register for the hackathon online?
-a:You can visit devfolio website
+a:You can register for the hackathon by visiting the Devfolio website. Simply navigate to the registration section to get started!
 q:Is there an offline registration option?
-a:No,there is no offline options.
+a:Unfortunately, there are no offline registration options available for this hackathon. All registrations must be completed online.
 q:What is the registration link?
-a:The registration link can be found on our official website "https://devfolio.co/hackathons". Please click on the link to proceed with the registration process.
+a:The registeration link is https://devfolio.co/hackathons.
 q:Is there a registration form I need to fill out?
-a:Yes, there is a registration form that needs to be filled out to complete your registration.
+a:Yes, to complete your registration, you will need to fill out a registration form. This helps us gather important information about you and your team.
 q:Do I need to create an account to register?
-a:Yes, you will need to create an account at devfolio website.
+a:Yes, you will need to create an account on the Devfolio website to register for the hackathon. This allows you to manage your registration and stay updated on event information.
 q:Can I register using my social media account?
-a:Yes, you can register using your social media account.
+a:Yes, you can conveniently register using your social media account! Just choose your preferred platform during the registration process to log in quickly.
 q:Is there a minimum age requirement for registration?
-a:No, There is no minimum age criteria.
+a:No, there is no minimum age requirement for registration. We welcome participants of all ages to join the hackathon!
 q:Can I register if I'm a student?
-a:Absolutely! We welcome students to register for the event.
+a:Absolutely! We encourage students to register for the event. It's a great opportunity to learn, collaborate, and network with other like-minded individuals.
 q:Can I register if I'm a professional?
-a:Yes, professionals are encouraged to register for the event. We believe that diverse participation enhances the experience for everyone.
+a:Yes, professionals are definitely encouraged to register for the event! We believe that diverse participation enriches the experience for everyone involved and fosters valuable networking opportunities.
 q:Can I register if I'm from outside the city/state/country?
-a:Yes, We welcome participants from all locations.
+a:Yes We welcome participants from all locations.
 q:Is there a registration fee?
-a:There no registration fee.
+a:No, there is no registration fee for this hackathon. We welcome everyone to join without any financial barriers!
 q:What is the registration fee amount?
-a:There no registration fee.
+a:There is currently no registration fee required. We invite all interested participants to register for the hackathon at no cost!
 q:Are there any discounts or promotions for early registration?
-a:There no registration fee.
+a:At this time, we do not offer any discounts or promotions for early registration. However, we encourage you to register as soon as possible to secure your spot!
 q:Is there a refund policy for the registration fee?
-a:There no registration fee.
+a:Since there is no registration fee, there is no need for a refund policy. We want to ensure that participating in this hackathon is completely hassle-free!
+q:What happens if I miss the payment deadline?
+a:No worries! There is no payment required for registration in this hackathon, so you don’t have to worry about missing any payment deadlines.
 q:What is the last date for registration?
-a:The last date for registration is 14 Nov.
+a:The last date for registration is the end of January. Be sure to register before then to secure your spot!
 q:Is there an extension for the registration deadline?
-a:Currently, there is no extension for the registration deadline. However, we will notify participants if any changes occur.
+a:Currently, there is no extension for the registration deadline. However, if any changes occur, we will notify all participants immediately.
 q:How can I check my registration status?
-a:You can check your registration status by logging into your account on our website. There, you will find the details related to your registration.
+a:You can easily check your registration status by logging into your account on the Devfolio website. All the details related to your registration will be available there.
 q:Can I modify my registration details after submitting?
-a:Yes, you can modify your registration details after submission. Please log in to your account to make any necessary changes.
+a:Yes, you can modify your registration details even after submission! Simply log in to your account on the Devfolio website to make any necessary changes.
 q:Can I register as a team?
-a:Yes, you can register as a team. Please ensure that all team members register under the same team name.
+a:Yes, you can register as a team! Please make sure that all team members register under the same team name for consistency.
 q:What is the maximum team size?
-a:The maximum team size is 4.
+a:The maximum team size for the hackathon is 4 members. Be sure to keep your team within this limit!
 q:Are there any restrictions on team composition?
-a:No there is not any restrictions related to team composition.
+a:No, there are no restrictions regarding team composition. We encourage diverse teams!
 q:Can I register as an individual?
-a:Yes, you can register as an individual if you prefer not to join a team.
+a:Absolutely! You can register as an individual if you prefer not to join a team.
 q:Can I join an existing team?
-a:Yes, if you know a team that is looking for additional members, you can join an existing team. Please ensure you have their team code for registration.
+a:Yes if you know a team that is looking for additional members, you can join an existing team. Please ensure you have their team code for registration.
 q:How do I form a team?
 a:To form a team, gather your teammates and have one member register the team through the registration link. They will need to provide the team name and details.
 q:Can I change my team after registration?
 a:Once registered, changes to team composition can be made by contacting our support team. Please provide the necessary details for any changes.
+q:Can I join multiple teams?
+a:No Joining one team or participation individually is allowed only.
 q:When does the hackathon start?
-a:It will start on 14th Nov.
+a:It will start in Feb 1st week.
 q:What is the duration of the hackathon?
-a:It will 3 days event.
+a:The hackathon will be a 3-day event, packed with exciting challenges and opportunities.
 q:Is there a specific theme for the hackathon?
-a:No, there is not any specific theme.
+a:There is no specific theme for this hackathon, allowing for a wide range of creative solutions!
 q:What is the event format (in-person, online, hybrid)?
-a:Event format will be in-person, i.e. teams must be present at that location.
+a:The event will be in-person, meaning all teams must be present at the designated location.
+q:Is it possible to participate virtually?
+a:Unfortunately, No you and your must be present at the designated location.
 q:Where will the hackathon be held?
-a:In IIIT Kota Campus.
+a:The hackathon will take place at the IIIT Kota Campus. We look forward to seeing you there!
 q:What are the event timings?
-a:It will be announced on the website.
+a:Events will begin at 10:00 AM each day. Be sure to arrive on time!
 q:Is there a schedule for the event?
-a:It will be announced on website.
+a:The detailed schedule of the event will be available in the first week of January. Stay tuned for updates!
 q:Are there any workshops or talks planned?
-a:It will be announced on website.
+a:Yes there are events planned like CSS battle, Kaggle war and more.
 q:Is there a networking event?
-a:It will be announced on website.
+a:Yes there are Open mike Sessions planned.
 q:Is there a hackathon after-party?
-a:It will be announced on website.
+a:No there is no such thing planned for this hackathon.
 q:Is there a keynote speaker?
-a:It will be announced on website.
+a:Yes there will be a speaker in inaugaration of hackathon.
 q:Who are the keynote speakers?
-a:It will be announced on website.
+a:Name of the speaker will be announced on HackTheChain website.
 q:Are there any industry experts or celebrities attending?
-a:It will be announced on website.
+a:Yes there are sessions planned for this.
 q:Will there be mentors available to guide participants?
-a:Yes, there will be mentors for guidance.
+a:Yes there will be mentors for guidance.
 q:Who are the mentors?
-a:It will be announced on website.
-q:What are the mentors' expertise?
-a:It will be announced on website.
+a:Codebase team will mentor you for any difficulties regarding ideation aspect. 
+q:What are the mentors expertise?
+a:For now Codebase team is mentoring you.
 q:How can I request a mentor?
-a:It will be announced on website.
+a:You talk to any codebase member for any doubt.
 q:Can I meet with a mentor one-on-one?
-a:It will be announced on website.
+a:CodeBase Team will be mentoring you.
 q:Is plagiarism allowed?
-a:No, plagiarism is strictly prohibited. All work must be original and properly attributed.
+a:No plagiarism is strictly prohibited all work must be original and properly attributed.
 q:What are the consequences of plagiarism?
-a:If plagiarism is detected, the team or individual may face disqualification from the hackathon.
+a:If plagiarism is detected the team or individual may face disqualification from the hackathon.
 q:What happens if I violate the rules of the hackathon?
-a:Violating hackathon rules can result in warnings, penalties, or immediate disqualification, depending on the severity of the infraction
+a:Violating hackathon rules can result in warnings, penalties, and immediate disqualification depending on the severity of the infraction.
 q:Can I appeal a decision if I am disqualified?
-a:Yes, participants may appeal a disqualification decision, but the final decision rests with the codebase members.
+a:Yes participants may appeal a disqualification decision, but the final decision rests with the codebase members.
 q:Is mentor support available throughout the event?
-a:Yes, the Codebase team will be available to mentor participants throughout the event to provide support and guidance.
+a:Yes the Codebase team will be available to mentor participants throughout the event to provide support and guidance.
 q:How can I contact a mentor?
 a:You can reach out to a Codebase team mentor via the official communication channels such as  Discord, email or Instagram and LinkedIn handles.
 q:Can I request a mentor for specific help?
-a:Yes, you can request specific assistance from the Codebase team for any part of your project, whether technical or non-technical.
+a:Yes you can request specific assistance from the Codebase team for any part of your project, whether technical or non-technical.
 q:Are there any limitations on the number of mentor requests?
 a:There are no strict limitations, but we encourage you to be considerate and respectful of other participants' need for mentorship from the Codebase team.
 q:Can I get help with my project idea or development?
 a:Absolutely! The Codebase team is here to assist with brainstorming, refining your project idea, and guiding you through development.
 q:Can I get feedback on my project from a mentor?
-a:Yes, the Codebase team will provide constructive feedback on your project to help you improve and optimize it.
+a:Yes the Codebase team will provide constructive feedback on your project to help you improve and optimize it.
 q:Can I get help with technical issues?
-a:Yes, the Codebase team is available to help troubleshoot and resolve any technical challenges you encounter during the hackathon.
+a:Yes the Codebase team is available to help troubleshoot and resolve any technical challenges you encounter during the hackathon.
 q:How do I know which mentor to approach?
 a:A mentor list with their areas of expertise will be provided. You can choose a mentor based on your project's requirements or the specific skills you need help with.
 q:Are there any mentors with specific expertise in my area of interest?
-a:Yes, mentors with a wide range of expertise, including technical and domain-specific areas, will be available.
+a:Yes mentors with a wide range of expertise, including technical and domain-specific areas, will be available.
 q:Can I request a mentor based on their experience or background?
 a:Absolutely! You are encouraged to request a mentor whose background and experience match the support you need for your project.
 q:Are there any mentors who have participated in previous hackathons?
-a:Yes, mentors have experience participating in and mentoring at hackathons, which makes them well-equipped to guide you through the challenges.
+a:Yes mentors have experience participating in and mentoring at hackathons, which makes them well-equipped to guide you through the challenges.
 q:Can I participate if I am a minor?
 a:Yes you can participate.
 q:Is there a prize for the winning team?
-a:Absolutely!, winning team will get a prize of  $100 check.
+a:Absolutely! winning team will get a prize of  $100 cash.
 q:What is the prize?
 a:Winning team will get $100 cash.
 q:How will the winner be determined?
 a:Best submitted idea and reliable approach to implement it will be declared as winner.
 q:Is there a judging panel?
-a:Yes , there will be judging panel.
+a:Yes there will be judging panel.
 q:What are the judging criteria?
-a:Will be announced soon.
+a:Most important part will be your idea and then execution.
 q:Is there a dress code for the event?
-a:Yes, dress should be formal.
+a:Yes dress should be formal.
 q:Is there a food and beverage area?
-a:Yes, there is canteen and food stalls at academic and entrance gate.
+a:Yes there is canteen and food stalls at academic and entrance gate.
 q:Are there any accommodations available for participants?
-a:No, there will be no separate rooms for participants.
+a:No there will be no separate rooms for participants.
 q:Is there a transportation service provided?
 a:Unfortunately, there won't be any transportation services available.
 q:Can I bring my own laptop or equipment?
-a:Yes, you can bring your own laptops.
+a:Yes you can bring your own laptops.
 q:Is there a Wi-Fi connection available?
-a:Yes, connectivity will be provided.
+a:Yes connectivity will be provided.
 q:Can I use my phone during the event?
-a:Yes, you can use your phone during events.
+a:Yes you can use your phone during events.
 q:Are there any safety precautions in place?
 a:Safety precautions aren't required for this event.
 q:Is there insurance coverage for participants?
-a:Unfortunately, there won't be any insurance coverage provided for participants.
+a:Unfortunately there won't be any insurance coverage provided for participants.

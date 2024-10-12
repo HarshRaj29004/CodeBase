@@ -1,12 +1,10 @@
-# import openai
-# from pdfminer.high_level import extract_text
 import torch
 from sentence_transformers import SentenceTransformer, CrossEncoder, util
 from transformers import BertTokenizer, BertForQuestionAnswering, BertForSequenceClassification
 
 
-def extract_text_from_pdf(pdf_path):
-    with open(pdf_path, 'r') as file:
+def extract_text(path):
+    with open(path, 'r') as file:
         data = file.read()
     lines = data.splitlines()
     qa_pairs = []
@@ -23,23 +21,29 @@ def extract_text_from_pdf(pdf_path):
         qa_pairs.append(current_qa)
     return qa_pairs
 
-def search(query, model, cross_enc, embeddings, paragraphs, top_k=5):
+def search(query, model, cross_enc, embeddings, paragraphs, top_k=5, batch_size=16):
     query_embedding = model.encode(query, convert_to_tensor=True)
     hits = util.semantic_search(query_embedding, embeddings, top_k=top_k)[0]
-    cross_input = [[query, paragraphs[hit["corpus_id"]]] for hit in hits]
-    cross_scores = cross_enc.predict(cross_input)
-
+    cross_input = []
+    for hit in hits:
+        cross_input.append([query, paragraphs[hit["corpus_id"]]])
+    cross_scores = []
+    for i in range(0, len(cross_input), batch_size):
+        batch = cross_input[i:i + batch_size]
+        batch_scores = cross_enc.predict(batch)
+        cross_scores.extend(batch_scores)
     for idx in range(len(cross_scores)):
         hits[idx]["cross_score"] = cross_scores[idx]
 
-    hits = sorted(hits, key=lambda x: x["cross_score"], reverse=True)
+    hits.sort(key=lambda x: x["cross_score"], reverse=True)
 
     results = []
-    for hit in hits[:5]:
-        paragraph = paragraphs[hit["corpus_id"]]
-        answer_part = paragraph.split("A:")[1].strip()
+    for hit in hits[:top_k]:  
+        answer_part = paragraphs[hit["corpus_id"]].split("A:")[1].strip()
         results.append(answer_part.replace("\n", " "))
+    
     return results
+
 
 
 
@@ -47,7 +51,9 @@ def get_bert_answer(tokenizer, model, question, context):
     inputs = tokenizer.encode_plus(question, context, add_special_tokens=True, return_tensors="pt")
     input_ids = inputs["input_ids"].tolist()[0]
 
-    outputs = model(**inputs)
+    with torch.no_grad():
+        outputs = model(**inputs)
+
     answer_start = torch.argmax(outputs.start_logits)
     answer_end = torch.argmax(outputs.end_logits) + 1
 
@@ -57,7 +63,7 @@ def get_bert_answer(tokenizer, model, question, context):
 
 if __name__ == "__main__":
     path = 'dataset.txt'
-    qa_pair = extract_text_from_pdf(path)
+    qa_pair = extract_text(path)
     model1 = SentenceTransformer("sentence-transformers/all-mpnet-base-v2")
     cross_encoder = CrossEncoder("cross-encoder/ms-marco-MiniLM-L-6-v2")
     paragraphs = [f"Q: {qa['q']} A: {qa['a']}" for qa in qa_pair]
@@ -73,11 +79,11 @@ if __name__ == "__main__":
     while True:
         query = input("Enter query: ")
     
-        results = search(query, model1, cross_encoder, embeddings, paragraphs, top_k=5)
+        results = search(query, model1, cross_encoder, embeddings, paragraphs)
 
         context = "\n".join(results)  
     
         response = get_bert_answer(bert_qa_tokenizer, bert_qa_model, query, context)
-
-        print("\n***BERT Response***")
-        print(response)
+        if not response.strip(): 
+            response = "Sorry, I couldn't find an answer for that. Could you please rephrase or ask a different question?"
+        print(f"Bert:{response}\n")
