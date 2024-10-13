@@ -150,3 +150,107 @@ q:Are there any safety precautions in place?
 a:Safety precautions aren't required for this event.
 q:Is there insurance coverage for participants?
 a:Unfortunately there won't be any insurance coverage provided for participants.
+q:What is the duration of HackTheChain 2.0?
+a: HackTheChain 2.0 is a 72-hour hackathon.
+ qCan beginners participate in HackTheChain 2.0?
+a: Absolutely! HackTheChain 2.0 welcomes participants of all skill levels.
+q:Is there a deadline for project submissions?
+a: Yes, all projects must be submitted by the end of the hackathon on Day 3.
+q: Will participants receive any certificates?
+a: Yes, all participants will receive a certificate of participation.
+q: Is there a limit to how many hackathons i can attend in a year?
+a: No, there is no limit on how many hackathons you can participate in within a year.
+ q: Can i attend the event without participating in the hackathon?
+a: Yes, spectators and tech enthusiasts are welcome to attend the event without participating.
+q: Is HackTheChain 2.0 a free event?
+a: Yes, HackTheChain 2.0 is completely free for all participants.
+q: Will teams get feedback on their projects?
+a: Yes, teams will receive feedback from judges and mentors after the hackathon ends.
+q: How do i report a bug or issue during the hackathon?
+a: you can report issues via the official support channels, such as discord or email of CodeBase.
+q: Are international participants allowed to join?
+a: Yes, participants from any country are welcome to join hackthechain 2.0.
+q: Do we have to bring our own hardware?
+a: Yes, participants must bring their own laptops and development hardware.
+q: Do we have to bring our own hardware?
+a: Yes, participants must bring their own laptops and development hardware.
+q: Is food provided at the event?
+a: Yes, food and refreshments will be provided throughout the event.
+q: How do i communicate with other participants?
+a: Participants can communicate via the official discord server or during team collaboration sessions.
+q: Can we participate in hackthechain 2.0 if we have no prior experience?
+a: Absolutely, hackthechain 2.0 is designed to be accessible to both beginners and experienced developers.
+q: Are there any specific tools or platforms we must use?
+a: No, you are free to use any tools or platforms for development, as long as they align with the hackathon's guidelines.
+q: How long do we have to work on our projects?
+a: Participants will have 72 hours to work on their projects during the hackathon.
+q: Can i bring a pre-built prototype to the hackathon?
+a: No, all work on your project must begin at the start of the hackathon.
+q: Will the hackathon include blockchain experts?
+a: Yes, blockchain experts will be available to mentor participants and assist with technical challenges.
+q: Are prizes given for different categories?
+a: Yes, there are prizes for the top teams as well as special category awards.
+q: Do i need to submit my project idea beforehand?
+a: No, you can submit your project idea during the hackathon.
+q: What happens if my team can't finish the project?
+a: Even if you can't complete your project, you can still submit a partially developed solution.
+q: Are participants required to attend all hackathon events?
+a: No, but it’s highly recommended to attend key sessions, such as workshops and networking events.
+q: How do i find teammates if i don’t have any?
+a: You can find teammates at the team formation event or through the hackathon’s discord channel.
+q: Can i use no-code or low-code platforms for my project?
+a: Yes, no-code and low-code platforms are allowed, as long as your project meets the hackathon's requirements.
+q: Will there be hackathon merchandise?
+a: Yes, participants will receive hackathon merchandise like t-shirts, stickers, and other swag for winners.
+q: How are project submissions evaluated?
+a: Projects are evaluated based on creativity, technical difficulty, design, and impact.
+q: Will there be photography or media coverage of the event?
+a: Yes, the event will have media coverage, and photos will be taken throughout the hackathon.
+q: Are there any deadlines for submitting my project?
+a: Yes, all projects must be submitted by the deadline at the end of the hackathon.
+q: Can we get sponsor perks during the hackathon?
+a: Yes, sponsors often provide perks such as free software, tools, or credits for participants.
+q: Can i use external APIs in my project?
+a: Yes, you are free to use any external APIs as long as they are properly credited.
+q: Will there be any team-building exercises before the hackathon starts?
+a: Yes, there will be icebreakers and team-building sessions to help participants get to know each other.
+q: Can participants attend virtually if they can’t be at the venue?
+a: Unfortunately, HackTheChain 2.0 is an in-person event, and virtual participation is not allowed.
+q: What should i bring to the hackathon?
+a: You should bring your laptop, charger, any necessary hardware, and your enthusiasm!
+q: Can i attend HackTheChain2.O if i am under 18?
+a: Yes, participants under 18 are allowed, but they may need parental consent.
+q: Will there be networking opportunities during the event?
+a: Yes, networking sessions are planned throughout the event for participants to connect with industry professionals.
+q: Can we continue working on our project after the hackathon ends?
+a: Yes, you can continue developing your project after the event, though final submissions are due at the hackathon’s end.
+q: What happens if i miss the submission deadline?
+a: Unfortunately, late submissions will not be considered, so it's important to submit on time.
+q: How will the winners be announced?
+a: Winners will be announced during the closing ceremony at the end of the hackathon.
+q: Can i join a team if i don’t have any technical skills?
+a: Yes, teams often need members with design, marketing, or project management skills.
+q: Are there any fun challenges or side events during the hackathon?
+a: Yes, there will be mini-challenges and games to keep the energy up during the hackathon.
+q: Will there be mentorship sessions during the hackathon?
+a: Yes, mentorship sessions will be available throughout the event to assist teams.
+q: How do i submit my project?
+a: You can submit your project through the official submission platform provided during the event.
+q: Can we submit our project in more than one category?
+a: Yes, you can submit your project for consideration in multiple categories.
+q: What is the main focus of HackTheChain 2.0?
+a: The main focus is on blockchain-based solutions, but other innovative tech solutions are welcome as well.
+q: Are there any specific industries that HackTheChain 2.O focuses on?
+a: No, HackTheChain2.O encourages projects from a wide range of industries.
+q: How do i stay updated with event notifications?
+a: You can stay updated through  instagram, linkedIn , emails, the discord server, and official event announcements.
+q: Will there be pitch sessions for projects?
+a: Yes, teams will have the opportunity to pitch their projects to the judges during the final round.
+q: Is there any specific hardware provided by the event organizers?
+a: No, participants need to bring their own hardware for project development.
+q: What should we do if our team is facing technical difficulties?
+a: You can reach out to the CodeBase team.
+q: can i form a team with people from different countries?
+a: Yes,  all team members are able to attend the event.
+q: Are there any recommended tools or technologies for the hackathon?
+a: While no specific tools are
